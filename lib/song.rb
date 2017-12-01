@@ -20,9 +20,9 @@ class Song
 	end
 
 	def self.artists
-    # all_artists = []
-		all_artists = @@artists.collect do |artist|
-			!all_artists.include?(artist)
+    all_artists = []
+		@@artists.each do |artist|
+			@@artists << artist unless all_artists.include?(artist)
 		end
 
 		all_artists
