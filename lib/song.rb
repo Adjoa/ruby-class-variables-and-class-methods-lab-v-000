@@ -24,7 +24,7 @@ class Song
 		all_artists = @@artists.collect do |artist|
 			!all_artists.include?(artist)
 		end
-    
+
 		all_artists
 	end
 
