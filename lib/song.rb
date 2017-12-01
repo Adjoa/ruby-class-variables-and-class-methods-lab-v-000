@@ -20,11 +20,12 @@ class Song
 	end
 
 	def self.artists
-		all_artists = @@artists.collect do |artist|
-			!@genres.include?(artist)
-		end
-
-		all_artists
+    @@artists
+		# all_artists = @@artists.collect do |artist|
+		# 	!@genres.include?(artist)
+		# end
+    #
+		# all_artists
 	end
 
   # def genres
