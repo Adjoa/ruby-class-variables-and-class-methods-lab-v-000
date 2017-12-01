@@ -24,7 +24,7 @@ class Song
 	end
 
   def genres
-		@@genres.uniq
+		puts "#{@@genres.uniq}"
 	end
 
 	# def genre_count
