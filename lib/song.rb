@@ -23,14 +23,10 @@ class Song
     @@artists.uniq
 	end
 
-  # def genres
-	# 	all_genres = @@genres.collect do |genre|
-	# 		!@genres.include?(genre)
-	# 	end
-  #
-	# 	all_genres
-	# end
-  #
+  def genres
+		@@genres.uniq
+	end
+
 	# def genre_count
 	# 	genre_histogram = {}
   #
