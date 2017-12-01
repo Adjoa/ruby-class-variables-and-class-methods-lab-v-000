@@ -22,7 +22,9 @@ class Song
 	def self.artists
     all_artists = []
 		@@artists.each do |artist|
-			@@artists << artist unless all_artists.include?(artist)
+      if !all_artists.include?(artist)
+        @@artists << artist
+      end
 		end
 
 		all_artists
