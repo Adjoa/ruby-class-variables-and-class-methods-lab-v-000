@@ -40,19 +40,19 @@ class Song
 
 		genre_histogram
 	end
-  #
-	# def artist_count
-	# 	artist_histogram = {}
-  #
-	# 	@@artists.each do |artist|
-	# 		if !artist_histogram[artist]
-	# 			artist_histogram[artist] = 1
-	# 		else
-	# 			artist_histogram[artist] += 1
-	# 		end
-	# 	end
-  #
-	# 	artist_histogram
-	# end
+
+	def self.artist_count
+		artist_histogram = {}
+
+		@@artists.each do |artist|
+			if !artist_histogram[artist]
+				artist_histogram[artist] = 1
+			else
+				artist_histogram[artist] += 1
+			end
+		end
+
+		artist_histogram
+	end
 
 end
