@@ -19,7 +19,7 @@ class Song
 		@@count
 	end
 
-	def artists
+	def self.artists
 		all_artists = @@artists.collect do |artist|
 			!@genres.include?(artist)
 		end
