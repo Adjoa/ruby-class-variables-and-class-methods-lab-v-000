@@ -19,21 +19,21 @@ class Song
 		@@count
 	end
 
-	# def genres
+	def artists
+		all_artists = @@artists.collect do |artist|
+			!@genres.include?(artist)
+		end
+
+		all_artists
+	end
+
+  # def genres
 	# 	all_genres = @@genres.collect do |genre|
 	# 		!@genres.include?(genre)
 	# 	end
   #
 	# 	all_genres
 	# end
-  #
-	# def artists
-	# 	all_artists = @@artists.collect do |artist|
-	# 		!@genres.include?(artist)
-	# 	end
-  #
-	# 	all_artists
-	# end9
   #
 	# def genre_count
 	# 	genre_histogram = {}
