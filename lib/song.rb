@@ -15,10 +15,10 @@ class Song
 		@@artists << artist
 	end
 
-	# def count
-	# 	@@count
-	# end
-  #
+	def count
+		@@count
+	end
+
 	# def genres
 	# 	all_genres = @@genres.collect do |genre|
 	# 		!@genres.include?(genre)
